@@ -49,14 +49,19 @@ const App = () => {
           <div className="mt-3">
             <h5>Possible Out Shots:</h5>
             <ul>
-              {outShots.map((shot, index) => (
-                <li key={index}>
-                  <strong>{shot.label}:</strong> {shot.value}
-                  {shot.note && (
-                    <small className="text-muted ml-2">({shot.note})</small>
-                  )}
-                </li>
-              ))}
+              {outShots.map(
+                (
+                  shot,
+                  index // this is mapping the labels
+                ) => (
+                  <li key={index}>
+                    <strong>{shot.label}:</strong> {shot.value}
+                    {shot.note && (
+                      <small className="text-muted ml-2">({shot.note})</small>
+                    )}
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </Col>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Button, Form, Badge } from "react-bootstrap";
 import outShotsData from "./OutShots";
 
 const App = () => {
@@ -28,8 +28,8 @@ const App = () => {
   };
 
   return (
-    <Container fluid>
-      <Row className="mt-3">
+    <Container fluid className="text-center mt-3">
+      <Row>
         <Col md={6} className="mx-auto">
           <Form.Group controlId="formNumber">
             <Form.Label>Enter Number:</Form.Label>
@@ -40,28 +40,45 @@ const App = () => {
               placeholder="Enter a number"
             />
           </Form.Group>
-          <Button variant="primary" className="mr-2" onClick={handleDecrement}>
-            -
-          </Button>
-          <Button variant="primary" onClick={handleIncrement}>
-            +
-          </Button>
+          <div className="mb-3">
+            <Button
+              variant="primary"
+              className="mr-2"
+              size="lg"
+              onClick={handleDecrement}
+            >
+              -
+            </Button>
+            <Button variant="primary" size="lg" onClick={handleIncrement}>
+              +
+            </Button>
+          </div>
           <div className="mt-3">
             <h5>Possible Out Shots:</h5>
-            <ul>
-              {outShots.map(
-                (
-                  shot,
-                  index // this is mapping the labels
-                ) => (
-                  <li key={index}>
-                    <strong>{shot.label}:</strong> {shot.value}
-                    {shot.note && (
-                      <small className="text-muted ml-2">({shot.note})</small>
-                    )}
-                  </li>
-                )
-              )}
+            <ul className="list-unstyled">
+              {outShots.map((shot, index) => (
+                <li key={index} className="mb-2">
+                  {shot.value && (
+                    <div>
+                      <strong>{shot.value}:</strong>{" "}
+                      {shot.note && (
+                        <small className="text-muted ml-2">
+                          ({shot.note}){" "}
+                        </small>
+                      )}
+                      {shot.label === "Practical" && (
+                        <Badge variant="success">{shot.label}</Badge>
+                      )}
+                      {shot.label === "Professional" && (
+                        <Badge variant="primary">{shot.label}</Badge>
+                      )}
+                      {shot.label === "Alternative" && (
+                        <Badge variant="danger">{shot.label}</Badge>
+                      )}
+                    </div>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </Col>

@@ -14,6 +14,9 @@ const App = () => {
   const initialNumber = 170; // Starting number
   const [currentNumber, setCurrentNumber] = useState(initialNumber);
   const [outShots, setOutShots] = useState(outShotsData[initialNumber] || []);
+  const [selectedRanges, setSelectedRanges] = useState([]);
+  const [customRangeStart, setCustomRangeStart] = useState("");
+  const [customRangeEnd, setCustomRangeEnd] = useState("");
 
   const handleNumberChange = (e) => {
     const newNumber = parseInt(e.target.value, 10);
@@ -33,6 +36,68 @@ const App = () => {
     const newNumber = currentNumber - 1;
     setCurrentNumber(newNumber);
     setOutShots(outShotsData[newNumber] || []);
+  };
+
+  const handleSelectedRangesChange = (e) => {
+    const value = e.target.value;
+    if (value === "custom") {
+      setSelectedRanges((prevRanges) =>
+        prevRanges.includes(value)
+          ? prevRanges.filter((range) => range !== value)
+          : [value]
+      );
+    } else {
+      setSelectedRanges((prevRanges) =>
+        prevRanges.includes(value)
+          ? prevRanges.filter((range) => range !== value)
+          : [...prevRanges, value]
+      );
+    }
+  };
+
+  const handleCustomRangeStartChange = (e) => {
+    setCustomRangeStart(e.target.value);
+  };
+
+  const handleCustomRangeEndChange = (e) => {
+    setCustomRangeEnd(e.target.value);
+  };
+
+  const handleRandomOutShot = () => {
+    let selectedRangesCopy = [...selectedRanges];
+
+    if (selectedRangesCopy.includes("custom")) {
+      // Validate custom range input
+      const start = parseInt(customRangeStart);
+      const end = parseInt(customRangeEnd);
+      if (!isNaN(start) && !isNaN(end) && start <= end) {
+        // Replace "custom" with the actual range
+        const customRange = `${start}-${end}`;
+        selectedRangesCopy = selectedRangesCopy.map((range) =>
+          range === "custom" ? customRange : range
+        );
+      } else {
+        // Handle an error or provide feedback to the user
+        alert("Invalid custom range. Please enter valid start and end values.");
+        return;
+      }
+    }
+
+    // Randomly select a range from the valid options
+    const randomRange =
+      selectedRangesCopy[Math.floor(Math.random() * selectedRangesCopy.length)];
+
+    // Extract start and end values from the random range
+    const [start, end] = randomRange.split("-");
+
+    // Generate a random number within the selected range
+    const randomNumber = Math.floor(
+      parseInt(start) + Math.random() * (parseInt(end) - parseInt(start) + 1)
+    );
+
+    // Update the current number and fetch the corresponding out shots
+    setCurrentNumber(randomNumber);
+    setOutShots(outShotsData[randomNumber] || []);
   };
 
   const bannerData = [
@@ -78,6 +143,7 @@ const App = () => {
       info: "You're at the end. Remember the minefield from 99-110? Here is the same minefield + 60. If you're starting your turn on one of the impossible finishes, the good news is that you don't have to worry about taking it out.\n\nWhen you're under 200 with one dart in hand, you need to avoiding shooting at a number where the single will leave you on an impossible finish. You can even look to the neighboring numbers and consider if there is a safety there as well.\n\nRemember that 158 and below are all safe for your next turn.\n\nFor example,\n\nIf you're at 195 with one dart left, the only single that will leave you an opportunity on you next turn would be SB.\n\nIf you're at 188 with one dart left, S20 would leave you stranded on 168, whereas S18 would leave 170.\n\nIf you're at 168 with one dart left, shooting at the T16 is a good option. It is surrounded by numbers that will guarantee you a chance at a finish on your next turn. T20, T19, T18, T17 all have traps around them.",
     },
   ];
+
   return (
     <Container fluid className="text-center mt-3">
       <Row>
@@ -90,8 +156,8 @@ const App = () => {
                 value={currentNumber}
                 onChange={handleNumberChange}
                 placeholder="Enter a number"
-                className="form-control-lg" // Updated class for larger size
-                style={{ fontSize: "2em" }} // Added inline style to increase font size
+                className="form-control-lg"
+                style={{ fontSize: "2em" }}
               />
               <Button
                 variant="primary"
@@ -156,13 +222,22 @@ const App = () => {
                         </small>
                       )}
                       {shot.label === "Practical" && (
-                        <Badge variant="success">{shot.label}</Badge>
+                        <Badge variant="light" className="bg-primary text-dark">
+                          {shot.label}
+                        </Badge>
                       )}
                       {shot.label === "Professional" && (
-                        <Badge variant="primary">{shot.label}</Badge>
+                        <Badge variant="light" className="bg-success text-dark">
+                          {shot.label}
+                        </Badge>
                       )}
                       {shot.label === "Alternative" && (
-                        <Badge variant="secondary">{shot.label}</Badge>
+                        <Badge
+                          variant="light"
+                          className="bg-secondary text-dark"
+                        >
+                          {shot.label}
+                        </Badge>
                       )}
                     </div>
                   )}
@@ -170,6 +245,61 @@ const App = () => {
               ))}
             </ul>
           </div>
+          <Form.Group controlId="formRandomOutShot">
+            <Form.Label className="mb-0">Select Random Out Shot:</Form.Label>
+            <div className="input-group">
+              {bannerData.map((item) => (
+                <Form.Check
+                  key={item.range}
+                  type="checkbox"
+                  id={`checkbox-${item.range}`}
+                  label={item.range}
+                  value={item.range}
+                  checked={selectedRanges.includes(item.range)}
+                  onChange={handleSelectedRangesChange}
+                  inline
+                  className="mx-2"
+                />
+              ))}
+              <Form.Check
+                type="checkbox"
+                id="checkbox-custom"
+                label="Custom"
+                value="custom"
+                checked={selectedRanges.includes("custom")}
+                onChange={handleSelectedRangesChange}
+                inline
+                className="mx-2"
+              />
+              {selectedRanges.includes("custom") && (
+                <div className="d-flex">
+                  <Form.Control
+                    type="number"
+                    value={customRangeStart}
+                    onChange={handleCustomRangeStartChange}
+                    placeholder="Start"
+                    className="form-control-lg"
+                  />
+                  <span className="mx-2">to</span>
+                  <Form.Control
+                    type="number"
+                    value={customRangeEnd}
+                    onChange={handleCustomRangeEndChange}
+                    placeholder="End"
+                    className="form-control-lg"
+                  />
+                </div>
+              )}
+              <Button
+                variant="primary"
+                size="lg"
+                className="input-group-append"
+                onClick={handleRandomOutShot}
+              >
+                Get Random Out Shot
+              </Button>
+            </div>
+          </Form.Group>
         </Col>
       </Row>
     </Container>

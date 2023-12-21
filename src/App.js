@@ -255,7 +255,15 @@ const App = () => {
                             {shot.label === "Two Dart Safety" && (
                               <Badge
                                 variant="light"
-                                className="bg-secondary text-dark"
+                                className="bg-info text-dark"
+                              >
+                                {shot.label}
+                              </Badge>
+                            )}
+                            {shot.label === "Avoid" && (
+                              <Badge
+                                variant="light"
+                                className="bg-danger text-dark"
                               >
                                 {shot.label}
                               </Badge>

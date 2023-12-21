@@ -297,7 +297,7 @@ const App = () => {
                   inline
                   className="mx-2"
                 />
-                {selectedRanges.includes("custom") && (
+                {selectedRanges.includes("custom") ? (
                   <div className="d-flex">
                     <Form.Control
                       type="number"
@@ -323,6 +323,15 @@ const App = () => {
                       Get Random Out Shot
                     </Button>
                   </div>
+                ) : (
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="input-group-append"
+                    onClick={handleRandomOutShot}
+                  >
+                    Get Random Out Shot
+                  </Button>
                 )}
               </div>
             </Form.Group>

@@ -71,6 +71,7 @@ const outShotsData = {
       note: "Safety Hitting a S8 still leaves you with a 2 dart finish. Avoid S5-D4 - hitting a S12 or S20 will bust",
     },
     { label: "Alternative", value: "", note: "" },
+    { label: "Avoid", value: "S5-D4", note: "Hitting a S12 or S20 will bust " },
   ],
   14: [
     { label: "Professional", value: "" },
@@ -86,8 +87,9 @@ const outShotsData = {
     {
       label: "Practical",
       value: "S13-D1",
-      note: "Safety Hitting a S4 or S6 still leaves you with a 2 dart finish. Avoid S7-D4 - hitting a S16 or S19 will bust.",
+      note: "Safety Hitting a S4 or S6 still leaves you with a 2 dart finish",
     },
+    { label: "Avoid", value: "S7-D4", note: "hitting a S16 or S19 will bust" },
     { label: "Alternative", value: "S11-D2", note: "" },
   ],
   16: [
@@ -100,16 +102,16 @@ const outShotsData = {
     {
       label: "Practical",
       value: "S13-D2",
-      note: "Safety Hitting a S4 or S6 still leaves you with a 2 dart finish. Avoid S1-D8 - hitting a S20 or S18 will bust",
+      note: "Safety Hitting a S4 or S6 still leaves you with a 2 dart finish.",
     },
-    { label: "Alternative", value: "", note: "" },
+    { label: "Avoid", value: "S1-D8", note: "Hitting a S20 or S18 will bust" },
   ],
   18: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
       value: "D9",
-      note: "If you're willing to waste a dart, shooting the 6/10 will leave either a D6 or D4",
+      note: "",
     },
     {
       label: "Alternative",
@@ -210,23 +212,22 @@ const outShotsData = {
       value: "S17-D6",
       note: "Hitting a S3 still leaves a double out.",
     },
-    {
-      label: "Alternative",
-      value: "S19-D5",
-      note: "Hitting a T7 or T3 will leave a double out",
-    },
   ],
   30: [
     { label: "Professional", value: "" },
     { label: "Practical", value: "D15", note: "" },
-    { label: "Alternative", value: "", note: "" },
+    {
+      label: "Alternative",
+      value: "S6-D12",
+      note: "If you're willing to waste a dart, shooting the 6/10 will leave either a D12 or D10",
+    },
   ],
   31: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "S19-D6",
-      note: "Safety Hitting a S7 or S3 still leaves a good double out",
+      value: "S7-D12",
+      note: "Safety Hitting a S19 still leaves a good double out",
     },
     { label: "Alternative", value: "", note: "" },
   ],
@@ -253,20 +254,19 @@ const outShotsData = {
     { label: "Professional", value: "" },
     { label: "Practical", value: "D17", note: "" },
     { label: "Alternative", value: "", note: "" },
-    {
-      label: "Two Dart Safety",
-      value: "S3-D16 or S19-D8",
-      note: "Split Decision - Shoot the wire between 3 & 19 which will leave a D16 or D8. Beware D19 or T19 will bust",
-    },
   ],
   35: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
       value: "S3-D16",
-      note: "Split Decision - Shoot the wire between 3 & 19 which will leave a D16 or D8. Beware D19 or T19 will bust",
+      note: "Split Decision - Shoot the wire between 3 & 19 which will leave a D16 or D8.",
     },
-    { label: "Alternative", value: "S19-D8", note: "" },
+    {
+      label: "Alternative",
+      value: "S19-D8",
+      note: " Beware D19 or T19 will bust",
+    },
   ],
   36: [
     { label: "Professional", value: "" },
@@ -292,7 +292,7 @@ const outShotsData = {
     { label: "Practical", value: "D19", note: "" },
     {
       label: "Alternative",
-      value: "S6-D16",
+      value: "S6/S10-D16/D14",
       note: "If you're willing to waste a dart, another option is S6-D16 or S10-D14 - shoot the wire between 6 & 10",
     },
   ],
@@ -306,7 +306,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "7/19 split-D16/D10",
+      value: "S7/S19-D16/D10",
       note: "With only two darts, shoot the wire between 7 & 19",
     },
   ],
@@ -320,12 +320,12 @@ const outShotsData = {
     {
       label: "Practical",
       value: "S9-D16",
-      note: "Option #1 Hitting a S5 leaves a D16. Option #2 Hitting a T1 leaves a D16",
+      note: "",
     },
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S17-D12",
+      value: "S17/S3-D12/D19",
       note: "Safety S3 or T3 will leave a one-dart finish",
     },
   ],
@@ -339,7 +339,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "6/10 split-D18/D16",
+      value: "S6/S10-D18/D16",
       note: "Shoot for S10 closest to S6. You'll end up with 36 or 32",
     },
   ],
@@ -367,53 +367,64 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "8/16 split-D18/D14 or 18/4 split-D13/D20",
+      value: "8/16-D18/D14 or S18/D4-D13/D20",
       note: "S8, T8 , S16 or S18, T4, S4 leaves a one-dart finish",
     },
   ],
-  //Pick up from here
   45: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "T13-D18",
-      note: "Option #1 Hitting a T13 leaves a D18. Option #2 Hitting a T5 leaves a D20",
+      value: "S13-D18",
+      note: "Safety All triples around 13 are safe. 7 or 19 will guarantee a double out",
     },
-    { label: "Alternative", value: "", note: "" },
+    { label: "Two Dart Safety", value: "S7/S19-D19/D13", note: "" },
   ],
   46: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "T14-D17",
+      value: "S14-D16",
       note: "Option #1 Hitting a T14 leaves a D17. Option #2 Hitting a T6 leaves a D20",
     },
-    { label: "Alternative", value: "", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "S6/S10-D20/D18",
+      note: "Safety S6 or S10 leaves a one-dart finish",
+    },
   ],
   47: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
       value: "S15-D16",
-      note: "Option #1 Hitting a S15 leaves a D16. Option #2 Hitting a T2 leaves a D20",
+      note: "",
     },
-    { label: "Alternative", value: "", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "S7/S19-D20/D14",
+      note: "Safety S7, T7 or S19 will leave a one-dart finish. Beware T19 will bust",
+    },
   ],
   48: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "T16-D20",
-      note: "Option #1 Hitting a T16 leaves a D20. Option #2 Hitting a T8 leaves a D20",
+      value: "S16-D16",
+      note: "",
     },
-    { label: "Alternative", value: "", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "S8/S16-D20/D16",
+      note: "Safety S8, D8, T8, S16, D16 will all leave a one-dart finish. Beware T16 will bust",
+    },
   ],
   49: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
       value: "S17-D16",
-      note: "Option #1 Hitting a S17 leaves a D16. Option #2 Hitting a T4 leaves a D20",
+      note: "Avoid S17-D16. Hitting the S3 or S2 will not leave a one-dart finish and T17 will bust",
     },
     { label: "Alternative", value: "", note: "" },
   ],
@@ -421,11 +432,12 @@ const outShotsData = {
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "T18-D16",
-      note: "Option #1 Hitting a T18 leaves a D16. Option #2 Hitting a T10 leaves a D20",
+      value: "T10-D10",
+      note: "Safety S10, D10, T10, T6, D6 all leave a one-dart finish. S15 leaves 35 and that’s easy to fix with 2 darts. DB only with 1 dart left",
     },
     { label: "Alternative", value: "", note: "" },
   ],
+  //PICK UP FROM HERE
   51: [
     { label: "Professional", value: "" },
     {

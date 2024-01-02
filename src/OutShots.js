@@ -442,11 +442,90 @@ const outShotsData = {
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "S19-D16",
-      note: "Option #1 Hitting a S19 leaves a D16. Option #2 Hitting a T2 leaves a D20",
+      value: "S11-D20",
+      note: "Avoid S19-D16. T19 will Bust",
     },
     { label: "Alternative", value: "", note: "" },
   ],
+
+  52: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "S12-D20",
+      note: "Avoid S20-D16. T20 will Bust. T12 is okay too since it will leave D8. Safety S16, D16, T8, D8 all leave a one-dart finish",
+    },
+    {
+      label: "Two Dart Safety",
+      value: "T16-D2",
+      note: "Safety S16, D16, T8, D8 all leave a one-dart finish",
+    },
+  ],
+  53: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "S13-D20",
+      note: "Safety With 2 darts, S3 or T17 will leave a one-dart finish",
+    },
+    {
+      label: "Two Dart Safety",
+      value: "S17-D18",
+      note: "Safety With 2 darts, S3 or T17 will leave a one-dart finish",
+    },
+  ],
+  54: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "S14-D20", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "S18-D18",
+      note: "Avoid S18-D18 with 3 darts. T18 will bust. With 2 darts, T18 is good since S4 leaves a safety on the bull.",
+    },
+  ],
+  55: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "S15-D20", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  56: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "S16-D20",
+      note: "Safety All combinations of 8 or 16 on your first dart leave something good!",
+    },
+    { label: "Alternative", value: "T8 / T16 split", note: "" },
+  ],
+  57: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "S17-D20",
+      note: "Avoid S19-D19. T19 will bust. Try SB-D16 if you’re well ahead and feeling full of Bull",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  58: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "S18-D20", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  59: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "S19-D20", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  60: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "S20-D20",
+      note: "Beware of the dreaded T20!",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

@@ -526,6 +526,88 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
   ],
 
+  61: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "SB-D18",
+      note: "Safety If you miss the Bull, any number will get you under 60",
+    },
+    { label: "Two Dart Safety", value: "T11-D14", note: "" },
+  ],
+  62: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "T10-D16", note: "" },
+    { label: "Two Dart Safety", value: "T12-D13", note: "" },
+  ],
+  63: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T9-D18",
+      note: "Safety S9 leaves a 2 dart 54 finish and a safety on S4. The 2 dart option is okay with 3 darts as well. I know some people that shoot bull first to get 2 darts at D19",
+    },
+    { label: "Two Dart Safety", value: "T13-D12", note: "" },
+  ],
+  64: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T16-D8",
+      note: "Any 8 / 16 combination is great",
+    },
+    { label: "Two Dart Safety", value: "T14-D11", note: "" },
+  ],
+  65: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "SB-D20",
+      note: "If you miss the SB, hopefully you'll hit a S5 or greater. If not, then use the 2 dart safety from this chart.",
+    },
+    { label: "Two Dart Safety", value: "T15-D10", note: "" },
+  ],
+  66: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T10-D18",
+      note: "S10 leaves 56. I love 56 since S16, D16, T16, D8, T8 all leave a finish. Only S8 will stop you.",
+    },
+    { label: "Two Dart Safety", value: "T16-D9", note: "" },
+  ],
+  67: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T9-D20",
+      note: "Safety S9, S12, S14 will all get you below 60. Avoid T17 with 3 darts since S2 or S3 will force you into a triple or Bull",
+    },
+    { label: "Two Dart Safety", value: "T17-D8", note: "" },
+  ],
+  68: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T16-D10",
+      note: "Safety S8 leaves 60 which leaves a Single-Double finish. No Bull! S20 is popular but S5 or S1 leaves a much harder finish.D18 with 2 darts leaves 32...hmmm",
+    },
+    { label: "Two Dart Safety", value: "T18-D7", note: "" },
+  ],
+  69: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T11-D18",
+      note: "Avoid! Safeties are scarce here.",
+    },
+    { label: "Two Dart Safety", value: "T19-D6", note: "" },
+  ],
+  70: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "T10-D20", note: "Another option is T18-D8" },
+    { label: "Two Dart Safety", value: "T20-D5", note: "" },
+  ],
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

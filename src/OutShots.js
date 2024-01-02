@@ -608,6 +608,84 @@ const outShotsData = {
     { label: "Practical", value: "T10-D20", note: "Another option is T18-D8" },
     { label: "Two Dart Safety", value: "T20-D5", note: "" },
   ],
+  71: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T13-D16",
+      note: "2 dart Safety T7 will leave DB",
+    },
+    { label: "Two Dart Safety", value: "T19-D7", note: "" },
+  ],
+  72: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T16-D12",
+      note: "S16 leaves 56! I love 56 since S16, D16, T16, D18, T8 all leave a finish. Only S8 will stop you.",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  73: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "T19-D8", note: "" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  74: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T14-D16",
+      note: "2 dart Safety T8 will leave DB",
+    },
+    { label: "Two Dart Safety", value: "T16-D13", note: "" },
+  ],
+  75: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "T17-D12", note: "SB-DB" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  76: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T16-D14",
+      note: "T20-D8 is popular with 3 darts but S1 or S5 will force you into a triple to finish. Safety S8 or S7 will get you below 70",
+    },
+    { label: "Two Dart Safety", value: "T20-D8", note: "" },
+  ],
+  77: [
+    { label: "Professional", value: "" },
+    { label: "Practical", value: "T19-D10", note: "" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  78: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T14-D18",
+      note: "T18-D12 is popular but T14 is safer since hitting the S11 or S9 will leave an easier 2 dart finish than S1 or S4",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  79: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T19-D11",
+      note: "T13-D20 is popular with 3 darts but S13 leaves 66 which is much tougher than 60 with 2 darts",
+    },
+    { label: "Two Dart Safety", value: "T13-D20", note: "" },
+  ],
+  80: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "T20-D10",
+      note: "T16-D16 with 3 darts. Hitting S16 leaves 64 and forces you to hit a triple or DB to finish.",
+    },
+    { label: "Two Dart Safety", value: "T16-D16", note: "" },
+  ],
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

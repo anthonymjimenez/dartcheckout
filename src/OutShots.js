@@ -686,6 +686,150 @@ const outShotsData = {
     },
     { label: "Two Dart Safety", value: "T16-D16", note: "" },
   ],
+  81: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "SB-56",
+      note: "SB leaves 56 which is easier with 2 darts than 62",
+    },
+    { label: "Two Dart Safety", value: "T19-D12", note: "" },
+  ],
+  82: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "DB-32",
+      note: "SB leaves 57 which is easier with 2 darts than 68. If you hit the DB, then it's a bonus",
+    },
+    { label: "Two Dart Safety", value: "T14-D20", note: "" },
+  ],
+  83: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-58",
+      note: "SB leaves 58 which is easier with 2 darts than 66",
+    },
+    { label: "Two Dart Safety", value: "T17-D16", note: "" },
+  ],
+  84: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-59",
+      note: "SB leaves 59 which is easier with 2 darts than 64",
+    },
+    { label: "Two Dart Safety", value: "T20-D12", note: "" },
+  ],
+  85: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-60",
+      note: "SB leaves 60 which is easier with 2 darts than 70",
+    },
+    { label: "Two Dart Safety", value: "T15-D20", note: "" },
+  ],
+  85: [
+    { label: "Professional", value: "" },
+    {
+      label: "Practical",
+      value: "SB-60",
+      note: "SB leaves 60 which is easier with 2 darts than 70",
+    },
+    { label: "Two Dart Safety", value: "T15-D20", note: "" },
+  ],
+  86: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T18-D16",
+      note: "SB leaves 61. S18 leaves 68. Equally difficult with 2 darts",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  87: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T17-D18",
+      note: "SB leaves 62. S17 leaves 70. Equally difficult with 2 darts",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  88: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-D14",
+      note: "SB leaves 63. S20 leaves 68. Equally difficult with 2 darts",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  89: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-D16",
+      note: "SB leaves 64. S19 leaves 70. Equally difficult with 2 darts",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  90: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-D15",
+      note: "The 18's are popular but S18 leaves 72 which forces a triple on the next dart. If you hit S20, then another crack at the T20 will leave you with D5 or DB.",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  91: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-66",
+      note: "S17 leaves 74 and forces a triple on the next dart",
+    },
+    { label: "Two Dart Safety", value: "T17-D20", note: "" },
+  ],
+  92: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-67",
+      note: "S20 leaves 72 and forces a triple on the next dart (although T20-D16 is sooooo tempting and worth it if you're hitting T20 consistently)",
+    },
+    { label: "Two Dart Safety", value: "T20-D16", note: "" },
+  ],
+  93: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-68",
+      note: "S19 leaves 74 and forces a triple on the next dart",
+    },
+    { label: "Two Dart Safety", value: "T19-D18", note: "" },
+  ],
+  94: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-69",
+      note: "S18 leaves 76 and forces a triple on the next dart",
+    },
+    { label: "Two Dart Safety", value: "T18-D20", note: "" },
+  ],
+  95: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-70",
+      note: "S19 leaves 76 and forces a triple on the next dart",
+    },
+    { label: "Two Dart Safety", value: "T19-D19", note: "" },
+  ],
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

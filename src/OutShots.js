@@ -830,6 +830,130 @@ const outShotsData = {
     },
     { label: "Two Dart Safety", value: "T19-D19", note: "" },
   ],
+  96: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-D18", note: "Same with Two Darts" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  97: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T19-D20", note: "Same with Two Darts" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  98: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-D19", note: "Same with Two Darts" },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+
+  99: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-42",
+      note: "6/10 safety on the second dart. Refer to the finish for 42.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  100: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-40",
+      note: "Beware: Hitting S1 on the first of 3 darts is very bad. You can't finish 99 with 2 darts.",
+    },
+    { label: "Two Dart Safety", value: "", note: "" },
+  ],
+  101: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-41",
+      note: "Beware: Never go for T17 with 3 darts since S2 will leave 99. Safety T19 is another option since any version of 7 or 3 leaves a 2 dart finish.",
+    },
+    { label: "Two Dart Safety", value: "T17-DB", note: "" },
+  ],
+  102: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-42",
+      note: "Safety: S1 or S5 leaves a 2 dart finish. Beware: T1 will leave 99.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  103: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-46",
+      note: "Safety: Any version of 7 or 3 leaves a 2 dart finish.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  104: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T16-56",
+      note: "Safety: S8 and S7 leaves a 2 dart finish that doesn't require a Bull. Whether you hit S16 or T16, you just stay on the 16's. 18 is not a good choice with 3 darts in hand since S1 will stop you in your tracks. T19 is sandwiched between 2 very safe numbers. Any version of 7 or 3 leaves a 2 dart finish but this will require a Bull finish.",
+    },
+    { label: "Two Dart Safety", value: "T18-DB", note: "" },
+  ],
+  105: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-45",
+      note: "Safety: S1 and S5 leaves a 2 dart finish. Beware: T1 will stop you.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  106: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-46",
+      note: "Safety: S5 and T5 leaves a 2 dart finish.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  107: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-50",
+      note: "Safety: T19-DB. Any version of 7 or 3 leaves a 2 dart finish.",
+    },
+    { label: "Two Dart Safety", value: "T19-DB", note: "" },
+  ],
+  108: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T16-60",
+      note: "Safety S8 or S7 to leave a 2 dart finish. Another good option is T18-S18-D18 with safeties of hitting a S1 or S4 on your first dart. S8 is the best miss since it leaves 100.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  109: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-49",
+      note: "Safety S5 leaves a 2 dart finish.",
+    },
+    { label: "Two Dart Safety", value: "", note: "Impossible" },
+  ],
+  110: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-53",
+      note: "T20-DB. Debatable. With 3 darts, S5 or S1 will stop you. T19 only has S7 as a danger. It's a matter of 50 or 53 with the last 2 darts.",
+    },
+    { label: "Two Dart Safety", value: "T20-DB", note: "" },
+  ],
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

@@ -954,6 +954,206 @@ const outShotsData = {
     },
     { label: "Two Dart Safety", value: "T20-DB", note: "" },
   ],
+  111: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-54",
+      note: "Safety: S7 or T7 leaves a 2 dart finish",
+    },
+  ],
+  112: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-52",
+      note: "Avoid: T5 and D1 are the only safeties on this number. Try not to leave yourself here.",
+    },
+  ],
+  113: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-56",
+      note: "Safety: S3 or T3 leaves a 2 dart finish",
+    },
+  ],
+  114: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-57",
+      note: "Safety: S7 or T7 leaves a 2 dart finish.",
+    },
+    {
+      label: "Alternative",
+      value: "T18-60",
+      note: "Safety: T18 leaves 60 which leaves a Single-Double finish. No Bull! S20 is popular but S5 or S1 leaves a much harder finish. D18 with 2 darts leaves 32...hmmm",
+    },
+  ],
+
+  115: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-55",
+      note: "Safety: S5 or T5 leaves a 2 dart finish",
+    },
+  ],
+  116: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-S19-40",
+      note: "Safety: T7 or T3 leaves a 2 dart finish. The T19 can happen on the first or second dart.",
+    },
+  ],
+  117: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-60",
+      note: "Safety: S7 leaves a 2 dart finish",
+    },
+  ],
+  118: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-58",
+      note: "Avoid: T18 leaves 64 which forces a triple or DB to finish. 58 is much easier with 2 darts.",
+    },
+  ],
+  119: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-62",
+      note: "Safety: T3 leaves a 2 dart finish. Avoid: S20 leaves 99!",
+    },
+  ],
+  120: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-60",
+      note: "Safety: S20 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  121: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-61",
+      note: "Safety: All 3 options leave a 2 dart finish",
+    },
+    {
+      label: "Alternative",
+      value: "SB-96 / T17-70",
+      note: "Safety: All 3 options leave a 2 dart finish",
+    },
+  ],
+
+  122: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T18-68",
+      note: "Safety: S18 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  123: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-66",
+      note: "Safety: S19 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  124: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-64",
+      note: "Safety: S20 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  125: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "SB-100",
+      note: "Safety: S18 or SB leaves a 2 dart finish. Taking the T18 option forces you to hit 2 triples to finish this number.",
+    },
+    {
+      label: "Alternative",
+      value: "T18-71",
+      note: "Safety: S18 leaves a 2 dart finish.",
+    },
+  ],
+
+  126: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-69",
+      note: "Safety: S19 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  127: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-67",
+      note: "Safety: S20 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  128: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T18-74",
+      note: "Safety: S18 leaves a 2 dart finish.",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  129: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-72",
+      note: "Safety: S19 or SB leaves a 2 dart finish.",
+    },
+    {
+      label: "Alternative",
+      value: "SB-104",
+      note: "Safety: S19 or SB leaves a 2 dart finish.",
+    },
+  ],
+
+  130: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-70",
+      note: "Safety: S20 leaves a 2 dart finish",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

@@ -1153,7 +1153,244 @@ const outShotsData = {
     },
     { label: "Alternative", value: "", note: "" },
   ],
+  131: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T19-74",
+      note: "Safety: T7 leaves a 2 dart out",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
 
+  132: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "DB-82",
+      note: "Safety: SB leaves an easier 2 dart finish than S20",
+    },
+    {
+      label: "Alternative",
+      value: "T20-72",
+      note: "Safety: SB leaves an easier 2 dart finish than S20",
+    },
+  ],
+
+  133: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-73", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  134: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-74", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  135: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "DB-85",
+      note: "Safety: SB leaves a 2 dart finish. S20 doesn't.",
+    },
+    {
+      label: "Alternative",
+      value: "T20-75",
+      note: "Safety: SB leaves a 2 dart finish. S20 doesn't.",
+    },
+  ],
+
+  136: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-76", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  137: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-77", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  138: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-78",
+      note: "Both good choices",
+    },
+    {
+      label: "Alternative",
+      value: "T19-T19-D12",
+      note: "Both good choices",
+    },
+  ],
+
+  139: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-79",
+      note: "",
+    },
+    {
+      label: "Alternative",
+      value: "T19-82",
+      note: "",
+    },
+  ],
+
+  140: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-80", note: "" },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  141: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-81", note: "" },
+    { label: "Alternative", value: "T19-84", note: "" },
+  ],
+  142: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-82", note: "" },
+    { label: "Alternative", value: "T19-T19-D14", note: "" },
+  ],
+  143: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-83", note: "" },
+    { label: "Alternative", value: "T19-86", note: "" },
+  ],
+  144: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-84", note: "" },
+    { label: "Alternative", value: "T19-87", note: "" },
+  ],
+  145: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-85", note: "" },
+    { label: "Alternative", value: "T19-88", note: "" },
+  ],
+  146: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-86", note: "" },
+    { label: "Alternative", value: "T19-T19-D16", note: "" },
+  ],
+  147: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-87", note: "" },
+    { label: "Alternative", value: "T19-90", note: "" },
+  ],
+  148: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-88", note: "" },
+    { label: "Alternative", value: "T19-91", note: "" },
+  ],
+  149: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-89", note: "" },
+    { label: "Alternative", value: "T19-92", note: "" },
+  ],
+  150: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-90", note: "" },
+    { label: "Alternative", value: "T19-T19-D18", note: "" },
+  ],
+  151: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-91", note: "" },
+    { label: "Alternative", value: "T19-94", note: "" },
+  ],
+  152: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-92", note: "" },
+    { label: "Alternative", value: "T19-T19-D19", note: "If you love 19's" },
+  ],
+  153: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-93", note: "" },
+    { label: "Alternative", value: "T19-96", note: "" },
+  ],
+  154: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-94", note: "" },
+    { label: "Alternative", value: "T19-97", note: "" },
+  ],
+  155: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-95", note: "" },
+    { label: "Alternative", value: "T19-98", note: "" },
+  ],
+  156: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-96",
+      note: "Avoid: T19 will leave 99 and can't be finished with 2 darts.",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+  157: [
+    { label: "Professional", value: "", note: "" },
+    { label: "Practical", value: "T20-97", note: "" },
+    { label: "Alternative", value: "T19-100", note: "" },
+  ],
+  158: [
+    { label: "Professional", value: "", note: "" },
+    {
+      label: "Practical",
+      value: "T20-98",
+      note: "Avoid: T19 will leave 101 which means that this finish would be T19-T17-DB.",
+    },
+    { label: "Alternative", value: "", note: "" },
+  ],
+
+  159: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Practical", value: "" },
+  ],
+  160: [
+    { label: "Professional", value: "T20-T20-D20" },
+    { label: "Alternative", value: "" },
+  ],
+  161: [
+    { label: "Professional", value: "T20-T17-DB" },
+    { label: "Alternative", value: "" },
+  ],
+  162: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
+  163: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
+  164: [
+    { label: "Professional", value: "T20-T18-DB" },
+    { label: "Alternative", value: "T19-T19-DB" },
+  ],
+  165: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
+  166: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
+  167: [
+    { label: "Professional", value: "T20-T19-DB" },
+    { label: "Alternative", value: "" },
+  ],
+  168: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
+  169: [
+    { label: "Professional", value: "Impossible" },
+    { label: "Alternative", value: "" },
+  ],
   // Continue with the rest of the numbers...
   170: [
     { label: "Professional", value: "" },

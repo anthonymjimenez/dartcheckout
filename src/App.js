@@ -349,7 +349,7 @@ const App = () => {
             <Button
               variant="primary"
               size="lg"
-              className="mx-2"
+              className="mx-2 mt-2"
               onClick={() => handleRandomTypeChange("twoDart")}
             >
               Two Dart Random Shot
@@ -357,7 +357,7 @@ const App = () => {
             <Button
               variant="primary"
               size="lg"
-              className="mx-2"
+              className="mx-2 mt-2"
               onClick={() => handleRandomTypeChange("threeDart")}
             >
               Three Dart Random Shot
@@ -365,7 +365,7 @@ const App = () => {
             <Button
               variant="primary"
               size="lg"
-              className="mx-2"
+              className="mx-2 mt-2"
               onClick={() => handleRandomTypeChange("custom")}
             >
               Custom Random Shot

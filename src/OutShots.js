@@ -1395,7 +1395,7 @@ const outShotsData = {
   170: [
     { label: "Professional", value: "" },
     {
-      label: "Practical",
+      label: "Professional",
       value: "T20-T20-DB",
       note: "The highest finish possible and coveted as a significant accomplishment.",
     },

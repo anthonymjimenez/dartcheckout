@@ -8,8 +8,8 @@ import {
   Badge,
   Accordion,
 } from "react-bootstrap";
-import outShotsData from "./OutShots";
-import bannerData from "./BannerData";
+import outShotsData from "./Data/OutShots";
+import bannerData from "./Data/BannerData";
 
 const App = () => {
   const initialNumber = 170; // Starting number
@@ -120,7 +120,6 @@ const App = () => {
         !isNaN(parseInt(customRangeEnd)) &&
         parseInt(customRangeStart) <= parseInt(customRangeEnd)
       ) {
-        const customRange = `${customRangeStart}-${customRangeEnd}`;
         setSelectedRanges(["custom"]);
         setOutShots(outShotsData[currentNumber] || []); // Regenerate out shots based on the current number
       }

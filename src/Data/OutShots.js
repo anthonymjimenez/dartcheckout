@@ -731,15 +731,6 @@ const outShotsData = {
     },
     { label: "Two Dart Safety", value: "T15-D20", note: "" },
   ],
-  85: [
-    { label: "Professional", value: "" },
-    {
-      label: "Practical",
-      value: "SB-60",
-      note: "SB leaves 60 which is easier with 2 darts than 70",
-    },
-    { label: "Two Dart Safety", value: "T15-D20", note: "" },
-  ],
   86: [
     { label: "Professional", value: "", note: "" },
     {

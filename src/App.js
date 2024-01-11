@@ -150,6 +150,12 @@ const App = () => {
 
   return (
     <Container fluid className="text-center mt-3">
+      {/* Header */}
+      <Row>
+        <Col md={12} className="mx-auto">
+          <h1 className="mb-4">Dart Counter</h1>
+        </Col>
+      </Row>
       <Row>
         <Col md={6} className="mx-auto">
           <Form.Group controlId="formNumber">
@@ -372,6 +378,21 @@ const App = () => {
             </Button>
           </div>
         </Col>
+      </Row>
+      {/* Footer */}
+      <Row className="mt-5">
+        <footer>
+          <p>
+            Created by{" "}
+            <a
+              href="https://github.com/anthonymjimenez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Anthony Jimenez
+            </a>
+          </p>
+        </footer>
       </Row>
     </Container>
   );

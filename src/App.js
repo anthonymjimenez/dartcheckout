@@ -10,6 +10,8 @@ import {
 } from "react-bootstrap";
 import outShotsData from "./Data/OutShots";
 import bannerData from "./Data/BannerData";
+import NumberRangeInfo from "./Components/NumberRangeInfo";
+import OutShotList from "./Components/OutShotList";
 
 const App = () => {
   const initialNumber = 170; // Starting number
@@ -187,100 +189,11 @@ const App = () => {
             </div>
           </Form.Group>
           <div className="mt-3">
-            <Accordion>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header className="font-weight-bold">
-                  {bannerData.map((item) =>
-                    currentNumber >= parseInt(item.range.split("-")[0]) &&
-                    currentNumber <= parseInt(item.range.split("-")[1]) ? (
-                      <span
-                        key={item.range}
-                      >{`Info about ${item.range} Range:`}</span>
-                    ) : null
-                  )}
-                </Accordion.Header>
-                <Accordion.Body>
-                  {bannerData.map((data, index) => (
-                    <div
-                      key={index}
-                      className={`
-                        ${
-                          currentNumber >= parseInt(data.range.split("-")[0]) &&
-                          currentNumber <= parseInt(data.range.split("-")[1])
-                            ? "mb-2"
-                            : "d-none"
-                        }
-                      `}
-                    >
-                      {data.info}
-                    </div>
-                  ))}
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
-            <h5 className="mt-4 mb-3">Possible Out Shots:</h5>
-            <div className="card p-3 shadow">
-              <ul className="list-unstyled">
-                {outShots.map((shot, index) => (
-                  <li key={index} className="mb-2">
-                    {shot.value && (
-                      <div className="row">
-                        <div className="col">
-                          <strong>{shot.value}:</strong>{" "}
-                          {shot.note && (
-                            <small className="text-muted">({shot.note})</small>
-                          )}
-                        </div>
-                        <div className="col-auto">
-                          <div className="badge-container">
-                            {shot.label === "Practical" && (
-                              <Badge
-                                variant="light"
-                                className="bg-primary text-dark"
-                              >
-                                {shot.label}
-                              </Badge>
-                            )}
-                            {shot.label === "Professional" && (
-                              <Badge
-                                variant="light"
-                                className="bg-success text-dark"
-                              >
-                                {shot.label}
-                              </Badge>
-                            )}
-                            {shot.label === "Alternative" && (
-                              <Badge
-                                variant="light"
-                                className="bg-secondary text-dark"
-                              >
-                                {shot.label}
-                              </Badge>
-                            )}
-                            {shot.label === "Two Dart Safety" && (
-                              <Badge
-                                variant="light"
-                                className="bg-info text-dark"
-                              >
-                                {shot.label}
-                              </Badge>
-                            )}
-                            {shot.label === "Avoid" && (
-                              <Badge
-                                variant="light"
-                                className="bg-danger text-dark"
-                              >
-                                {shot.label}
-                              </Badge>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <NumberRangeInfo
+              bannerData={bannerData}
+              currentNumber={currentNumber}
+            ></NumberRangeInfo>
+            <OutShotList outShots={outShots}></OutShotList>
           </div>
 
           {randomType === "custom" && (

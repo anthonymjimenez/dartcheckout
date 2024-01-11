@@ -1,6 +1,6 @@
 import { Badge } from "react-bootstrap";
 
-const OutShotList = (outShots) => {
+const OutShotList = ({ outShots }) => {
   return (
     <>
       <h5 className="mt-4 mb-3">Possible Out Shots:</h5>

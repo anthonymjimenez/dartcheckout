@@ -1,6 +1,6 @@
 import { Accordion } from "react-bootstrap";
 
-const NumberRangeInfo = (bannerData, currentNumber) => {
+const NumberRangeInfo = ({ bannerData, currentNumber }) => {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">

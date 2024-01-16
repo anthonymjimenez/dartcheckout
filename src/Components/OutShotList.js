@@ -1,5 +1,22 @@
 import { Badge } from "react-bootstrap";
 
+// Helper function to render badges based on the shot label
+const renderBadge = (label) => {
+  const badgeVariant = {
+    Practical: "bg-primary text-dark",
+    Professional: "bg-success text-dark",
+    Alternative: "bg-secondary text-dark",
+    "Two Dart Safety": "bg-info text-dark",
+    Avoid: "bg-danger text-dark",
+  };
+
+  return (
+    <Badge variant="light" className={badgeVariant[label]}>
+      {label}
+    </Badge>
+  );
+};
+
 const OutShotList = ({ outShots }) => {
   return (
     <>
@@ -18,34 +35,7 @@ const OutShotList = ({ outShots }) => {
                   </div>
                   <div className="col-auto">
                     <div className="badge-container">
-                      {shot.label === "Practical" && (
-                        <Badge variant="light" className="bg-primary text-dark">
-                          {shot.label}
-                        </Badge>
-                      )}
-                      {shot.label === "Professional" && (
-                        <Badge variant="light" className="bg-success text-dark">
-                          {shot.label}
-                        </Badge>
-                      )}
-                      {shot.label === "Alternative" && (
-                        <Badge
-                          variant="light"
-                          className="bg-secondary text-dark"
-                        >
-                          {shot.label}
-                        </Badge>
-                      )}
-                      {shot.label === "Two Dart Safety" && (
-                        <Badge variant="light" className="bg-info text-dark">
-                          {shot.label}
-                        </Badge>
-                      )}
-                      {shot.label === "Avoid" && (
-                        <Badge variant="light" className="bg-danger text-dark">
-                          {shot.label}
-                        </Badge>
-                      )}
+                      {shot.label && renderBadge(shot.label)}
                     </div>
                   </div>
                 </div>

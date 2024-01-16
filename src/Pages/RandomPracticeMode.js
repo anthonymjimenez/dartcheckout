@@ -22,7 +22,7 @@ const RandomPracticeMode = () => {
 
   return (
     <>
-      <Row>
+      <Row className="mt-4">
         <Col md={6} className="mx-auto">
           <NumberInput
             currentNumber={currentNumber}

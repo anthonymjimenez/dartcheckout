@@ -15,19 +15,11 @@ const RandomMode = ({
 
   const handleSelectedRangesChange = (e) => {
     const value = e.target.value;
-    if (value === "custom") {
-      setSelectedRanges((prevRanges) =>
-        prevRanges.includes(value)
-          ? prevRanges.filter((range) => range !== value)
-          : [value]
-      );
-    } else {
-      setSelectedRanges((prevRanges) =>
-        prevRanges.includes(value)
-          ? prevRanges.filter((range) => range !== value)
-          : [...prevRanges, value]
-      );
-    }
+    setSelectedRanges((prevRanges) =>
+      prevRanges.includes(value)
+        ? prevRanges.filter((range) => range !== value)
+        : [...prevRanges, value]
+    );
   };
 
   const handleCustomRangeStartChange = (e) => {
@@ -38,10 +30,11 @@ const RandomMode = ({
     setCustomRangeEnd(e.target.value);
   };
 
-  const handleRandomOutShot = () => {
+  const handleCustomOutShot = () => {
     let selectedRangesCopy = [...selectedRanges];
 
     if (selectedRangesCopy.includes("custom")) {
+      // this "custom" refers to the option to input a range within the custom option
       // Validate custom range input
       const start = parseInt(customRangeStart);
       const end = parseInt(customRangeEnd);
@@ -52,7 +45,6 @@ const RandomMode = ({
           range === "custom" ? customRange : range
         );
       } else {
-        // Handle an error or provide feedback to the user
         alert("Invalid custom range. Please enter valid start and end values.");
         return;
       }
@@ -61,7 +53,6 @@ const RandomMode = ({
     // Randomly select a range from the valid options
     const randomRange =
       selectedRangesCopy[Math.floor(Math.random() * selectedRangesCopy.length)];
-
     // Extract start and end values from the random range
     const [start, end] = randomRange.split("-");
 
@@ -75,6 +66,20 @@ const RandomMode = ({
     setOutShots(outShotsData[randomNumber] || []);
   };
 
+  const handleStandardOutShot = (type) => {
+    if (type === "twoDart") {
+      // Generate random number for two-dart range (41-100)
+      const randomNumber = Math.floor(41 + Math.random() * (100 - 41 + 1));
+      setCurrentNumber(randomNumber);
+      setOutShots(outShotsData[randomNumber] || []);
+    } else if (type === "threeDart") {
+      // Generate random number for three-dart range (101-170)
+      const randomNumber = Math.floor(101 + Math.random() * (170 - 101 + 1));
+      setCurrentNumber(randomNumber);
+      setOutShots(outShotsData[randomNumber] || []);
+    }
+  };
+
   const handleRandomTypeChange = (type) => {
     // Check if the current type is "custom"
     const isCustomType = randomType === "custom";
@@ -86,39 +91,9 @@ const RandomMode = ({
       setRandomType(type);
     }
 
-    // Retain custom range values when switching back to "Custom Random Shot"
-    if (type !== "custom" && isCustomType) {
-      if (
-        !isNaN(parseInt(customRangeStart)) &&
-        !isNaN(parseInt(customRangeEnd)) &&
-        parseInt(customRangeStart) <= parseInt(customRangeEnd)
-      ) {
-        setSelectedRanges(["custom"]);
-        setOutShots(outShotsData[currentNumber] || []); // Regenerate out shots based on the current number
-      }
-    }
-
-    // Reset custom range values when switching to other random types
-    if (type !== "custom") {
-      setCustomRangeStart("");
-      setCustomRangeEnd("");
-    }
-
-    if (type === "twoDart") {
-      // Generate random number for two-dart range (41-100)
-      const randomNumber = Math.floor(41 + Math.random() * (100 - 41 + 1));
-      setCurrentNumber(randomNumber);
-      setOutShots(outShotsData[randomNumber] || []);
-    } else if (type === "threeDart") {
-      // Generate random number for three-dart range (101-170)
-      const randomNumber = Math.floor(101 + Math.random() * (170 - 101 + 1));
-      setCurrentNumber(randomNumber);
-      setOutShots(outShotsData[randomNumber] || []);
-    } else if (type === "custom") {
-      // Regenerate out shots based on the current number
-      setOutShots(outShotsData[currentNumber] || []);
-    }
+    handleStandardOutShot(type);
   };
+
   return (
     <>
       {randomType === "custom" && (
@@ -169,7 +144,7 @@ const RandomMode = ({
                   variant="primary"
                   size="lg"
                   className="input-group-append"
-                  onClick={handleRandomOutShot}
+                  onClick={handleCustomOutShot}
                 >
                   Get Random Out Shot
                 </Button>
@@ -179,7 +154,7 @@ const RandomMode = ({
                 variant="primary"
                 size="lg"
                 className="input-group-append"
-                onClick={handleRandomOutShot}
+                onClick={handleCustomOutShot}
               >
                 Get Random Out Shot
               </Button>

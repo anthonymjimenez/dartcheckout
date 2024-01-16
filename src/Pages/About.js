@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
             system that emphasizes a practical approach. Most out shot
             calculators rely on a system that favors optimizing favorable
             doubles without taking into consideration human error. You can learn
-            more about this approach to 501{" "}
+            more about Dart Counter's approach to 501{" "}
             <a
               href="https://ricksmith.ca/Darts/dartsouts.htm"
               target="_blank"

@@ -423,7 +423,7 @@ const outShotsData = {
     { label: "Professional", value: "" },
     {
       label: "Practical",
-      value: "S17-D16",
+      value: "S9-D20",
       note: "Avoid S17-D16. Hitting the S3 or S2 will not leave a one-dart finish and T17 will bust",
     },
     { label: "Alternative", value: "", note: "" },

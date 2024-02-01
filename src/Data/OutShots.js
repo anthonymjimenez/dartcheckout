@@ -292,7 +292,7 @@ const outShotsData = {
     { label: "Practical", value: "D19", note: "" },
     {
       label: "Alternative",
-      value: "S6/S10-D16/D14",
+      value: "S6/S10-D16xD14",
       note: "If you're willing to waste a dart, another option is S6-D16 or S10-D14 - shoot the wire between 6 & 10",
     },
   ],
@@ -306,7 +306,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S7/S19-D16/D10",
+      value: "S7/S19-D16-D10",
       note: "With only two darts, shoot the wire between 7 & 19",
     },
   ],
@@ -325,7 +325,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S17/S3-D12/D19",
+      value: "S17/S3-D12-D19",
       note: "Safety S3 or T3 will leave a one-dart finish",
     },
   ],
@@ -339,7 +339,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S6/S10-D18/D16",
+      value: "S6/S10-D18-D16",
       note: "Shoot for S10 closest to S6. You'll end up with 36 or 32",
     },
   ],
@@ -604,7 +604,7 @@ const outShotsData = {
     { label: "Two Dart Safety", value: "T19-D6", note: "" },
   ],
   70: [
-    { label: "Professional", value: "T18-D8" },
+    { label: "Practical", value: "T18-D8" },
     { label: "Practical", value: "T10-D20", note: "Another option is T18-D8" },
     { label: "Two Dart Safety", value: "T20-D5", note: "" },
   ],

@@ -26,8 +26,8 @@ const App = () => {
               <Nav.Link as={NavLink} to="/" activeClassName="active" exact>
                 Home
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/simple" activeClassName="active">
-                Simple Practice Mode
+              <Nav.Link as={NavLink} to="/random" activeClassName="active">
+                Random Practice Mode
               </Nav.Link>
               <Nav.Link as={NavLink} to="/about" activeClassName="active">
                 About
@@ -38,26 +38,10 @@ const App = () => {
 
         {/* Main Content */}
         <Routes>
-          <Route path="/simple" element={<SimplePracticeMode />} />
+          <Route path="/random" element={<RandomPracticeMode />} />
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<RandomPracticeMode />} />
+          <Route path="/" element={<SimplePracticeMode />} />
         </Routes>
-
-        {/* Footer */}
-        <div className="mt-5">
-          <footer>
-            <p>
-              Created by{" "}
-              <a
-                href="https://github.com/anthonymjimenez"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Anthony Jimenez
-              </a>
-            </p>
-          </footer>
-        </div>
       </div>
     </Router>
   );

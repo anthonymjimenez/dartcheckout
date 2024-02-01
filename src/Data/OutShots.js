@@ -292,7 +292,7 @@ const outShotsData = {
     { label: "Practical", value: "D19", note: "" },
     {
       label: "Alternative",
-      value: "S6/S10-D16xD14",
+      value: "S6/S10-D16 or D14",
       note: "If you're willing to waste a dart, another option is S6-D16 or S10-D14 - shoot the wire between 6 & 10",
     },
   ],
@@ -306,7 +306,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S7/S19-D16-D10",
+      value: "S7/S19-D16 or D10",
       note: "With only two darts, shoot the wire between 7 & 19",
     },
   ],
@@ -325,7 +325,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S17/S3-D12-D19",
+      value: "S17/S3-D12 or D19",
       note: "Safety S3 or T3 will leave a one-dart finish",
     },
   ],
@@ -339,7 +339,7 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "S6/S10-D18-D16",
+      value: "S6/S10-D18 or D16",
       note: "Shoot for S10 closest to S6. You'll end up with 36 or 32",
     },
   ],
@@ -367,8 +367,12 @@ const outShotsData = {
     { label: "Alternative", value: "", note: "" },
     {
       label: "Two Dart Safety",
-      value: "8/16-D18/D14 or S18/D4-D13/D20",
+      value: "S8/S16-D18 or  D14",
       note: "S8, T8 , S16 or S18, T4, S4 leaves a one-dart finish",
+    },
+    {
+      label: "Two Dart Safety",
+      value: "S4/S18-D20 or D13",
     },
   ],
   45: [
@@ -389,7 +393,7 @@ const outShotsData = {
     },
     {
       label: "Two Dart Safety",
-      value: "S6/S10-D20/D18",
+      value: "S6/S10-D20 or D18",
       note: "Safety S6 or S10 leaves a one-dart finish",
     },
   ],
@@ -402,7 +406,7 @@ const outShotsData = {
     },
     {
       label: "Two Dart Safety",
-      value: "S7/S19-D20/D14",
+      value: "S7/S19-D20 or D14",
       note: "Safety S7, T7 or S19 will leave a one-dart finish. Beware T19 will bust",
     },
   ],
@@ -415,7 +419,7 @@ const outShotsData = {
     },
     {
       label: "Two Dart Safety",
-      value: "S8/S16-D20/D16",
+      value: "S8/S16-D20 or D16",
       note: "Safety S8, D8, T8, S16, D16 will all leave a one-dart finish. Beware T16 will bust",
     },
   ],
@@ -606,7 +610,11 @@ const outShotsData = {
   70: [
     { label: "Practical", value: "T18-D8" },
     { label: "Practical", value: "T10-D20", note: "Another option is T18-D8" },
-    { label: "Two Dart Safety", value: "T20-D5", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "T20-D5",
+      note: "With two darts left S20 leaves DB",
+    },
   ],
   71: [
     { label: "Professional", value: "" },

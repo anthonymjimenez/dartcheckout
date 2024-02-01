@@ -27,10 +27,12 @@ const About = () => {
             >
               here
             </a>
-            . This website uses Rick's system and notes. Final note: If you find
-            yourself doubting if you should go for the suggested shot, please
-            refer to the "Learn more about this range" dropdown banner for more
-            information.
+            . This website uses Rick's system and notes.
+            <br></br>
+            <br></br>
+            <strong> Final note: </strong> If you find yourself doubting if you
+            should go for the suggested shot, please refer to the "Learn more
+            about this range" dropdown banner for more information.
           </p>
           <p>
             Thanks for using Dart Counter and please check out my other projects{" "}

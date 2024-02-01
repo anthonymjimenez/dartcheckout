@@ -7,7 +7,7 @@ import OutShotList from "../Components/OutShotList";
 import NumberInput from "../Components/NumberInput";
 
 const SimplePracticeMode = () => {
-  const initialNumber = 70; // Starting number
+  const initialNumber = 80; // Starting number
   const [currentNumber, setCurrentNumber] = useState(initialNumber);
   const [outShots, setOutShots] = useState(outShotsData[initialNumber] || []);
 

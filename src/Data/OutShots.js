@@ -382,14 +382,14 @@ const outShotsData = {
       value: "S13-D18",
       note: "Safety All triples around 13 are safe. 7 or 19 will guarantee a double out",
     },
-    { label: "Two Dart Safety", value: "S7/S19-D19/D13", note: "" },
+    { label: "Two Dart Safety", value: "S7/S19-D19 or D13", note: "" },
   ],
   46: [
     { label: "Professional", value: "" },
     {
       label: "Practical",
       value: "S14-D16",
-      note: "Option #1 Hitting a T14 leaves a D17. Option #2 Hitting a T6 leaves a D20",
+      note: "",
     },
     {
       label: "Two Dart Safety",

@@ -14,11 +14,12 @@ const About = () => {
       <Row>
         <Col md={8} className="mx-auto">
           <p className="lead">
-            This website was created specifically to allow dart players to use a
-            system that emphasizes a practical approach. Most out shot
-            calculators rely on a system that favors optimizing favorable
-            doubles without taking into consideration human error. You can learn
-            more about Dart Counter's approach to 501{" "}
+            This site's virtual checkout table emphasizes a practical approach
+            to doubling out in '01 format darts. Most out shot calculators rely
+            on a system that is best suited for professional players who hit
+            triples at rates exceeding 30 percent. The rest of us can benefit
+            from a system that takes into account occasional stray darts. You
+            can learn more about Dart Counter's approach to 501{" "}
             <a
               href="https://ricksmith.ca/Darts/dartsouts.htm"
               target="_blank"
@@ -26,7 +27,10 @@ const About = () => {
             >
               here
             </a>
-            . This website uses Rick's system and notes.
+            . This website uses Rick's system and notes. Final note: If you find
+            yourself doubting if you should go for the suggested shot, please
+            refer to the "Learn more about this range" dropdown banner for more
+            information.
           </p>
           <p>
             Thanks for using Dart Counter and please check out my other projects{" "}

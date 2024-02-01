@@ -604,7 +604,7 @@ const outShotsData = {
     { label: "Two Dart Safety", value: "T19-D6", note: "" },
   ],
   70: [
-    { label: "Professional", value: "" },
+    { label: "Professional", value: "T18-D8" },
     { label: "Practical", value: "T10-D20", note: "Another option is T18-D8" },
     { label: "Two Dart Safety", value: "T20-D5", note: "" },
   ],

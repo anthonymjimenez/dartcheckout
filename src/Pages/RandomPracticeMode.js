@@ -8,7 +8,7 @@ import RandomMode from "../Components/RandomMode";
 import NumberInput from "../Components/NumberInput";
 
 const RandomPracticeMode = () => {
-  const initialNumber = 170; // Starting number
+  const initialNumber = 70; // Starting number
   const [currentNumber, setCurrentNumber] = useState(initialNumber);
   const [outShots, setOutShots] = useState(outShotsData[initialNumber] || []);
 

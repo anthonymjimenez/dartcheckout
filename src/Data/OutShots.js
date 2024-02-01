@@ -682,9 +682,13 @@ const outShotsData = {
     {
       label: "Practical",
       value: "T20-D10",
-      note: "T16-D16 with 3 darts. Hitting S16 leaves 64 and forces you to hit a triple or DB to finish.",
+      note: "",
     },
-    { label: "Two Dart Safety", value: "T16-D16", note: "" },
+    {
+      label: "Two Dart Safety",
+      value: "T16-D16",
+      note: "Less practical with 3 darts because hitting S16 leaves 64 and forces you to hit a triple or DB to finish. ",
+    },
   ],
   81: [
     { label: "Professional", value: "" },
